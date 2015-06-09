@@ -26,8 +26,7 @@ public class UserController extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	dao = new UserDao();
-        String forward="";
+    	String forward="";
         String action = request.getParameter("action");
 
         if (action.equalsIgnoreCase("delete")){
