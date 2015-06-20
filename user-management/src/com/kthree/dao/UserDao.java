@@ -70,7 +70,7 @@ public class UserDao {
 		List<User> users = new ArrayList<User>();
 		try {
 			Statement statement = connection.createStatement();
-			ResultSet rs = statement.executeQuery("select * from users");
+			ResultSet rs = statement.executeQuery("select * from users where active=1");
 			while (rs.next()) {
 				User user = new User();
 				user.setUserid(rs.getInt("userid"));
