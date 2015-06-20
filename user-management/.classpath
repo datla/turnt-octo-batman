@@ -8,5 +8,7 @@
 	<classpathentry exported="true" kind="lib" path="web/WEB-INF/lib/mysql-connector-java-5.1.35-bin.jar"/>
 	<classpathentry exported="true" kind="lib" path="web/WEB-INF/lib/servlet-api.jar"/>
 	<classpathentry exported="true" kind="lib" path="web/WEB-INF/lib/standard.jar"/>
+	<classpathentry exported="true" kind="lib" path="web/WEB-INF/lib/log4j-extras.jar"/>
+	<classpathentry exported="true" kind="lib" path="web/WEB-INF/lib/log4j.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

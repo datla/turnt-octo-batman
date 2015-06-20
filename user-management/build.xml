@@ -18,12 +18,18 @@
 		<javac destdir="build/classes" debug="true" srcdir="src">
 			<classpath refid="compile.classpath"/>
 		</javac>
+		<copy todir="web/WEB-INF/classes">
+			<fileset dir="src">
+				<include name="**/*.properties" />
+			</fileset>
+		</copy>
 	</target>
 	
 	<target name="war" depends="compile">
-		<war destfile="dist/user-mgt.war" webxml="web/WEB-INF/web.xml" >
+		<war destfile="dist/user-mgt.war" webxml="web/WEB-INF/web.xml">
 			<fileset dir="web"/>
 			<classes dir="build/classes"/>
+			
 		</war>
 	</target>
 	

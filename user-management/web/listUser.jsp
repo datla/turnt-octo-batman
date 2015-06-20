@@ -40,7 +40,7 @@
 						<td><fmt:formatDate pattern="yyyy-MMM-dd" value="${user.dob}" /></td>
 						<td><c:out value="${user.email}" /></td>
 						<td><a
-							href="UserController?action=edit&userId=<c:out value="${user.userid}"/>">Update</a></td>
+							href="UserController?action=edit&userId=<c:out value="${user.userid}"/>">Edit</a></td>
 						<td><a
 							href="UserController?action=delete&userId=<c:out value="${user.userid}"/>">Delete</a></td>
 					</tr>
